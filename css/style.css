@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&family=Oswald:wght@200&family=Radio+Canada:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.banner {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: 0.5;
+
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+span {
+    color: rgb(255, 0, 0);
+}
+
+#menu-bar {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    right: 0%;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    position: relative;
+    float: left;
+}
+
+.menu ul li a {
+    font-size: 23px;
+    padding: 20px;
+    color: rgb(8, 7, 7);
+    display: block;
+}
+
+.menu ul li a:hover {
+    color: rgb(17, 13, 13);
+    background: rgb(255, 238, 0);
+}
+
+section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.handle {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.handle li {
+    list-style: none;
+}
+
+.handle li i {
+   position: relative;
+   right: 12px;
+   bottom: 20px;
+   width: 60px;
+    padding: 0px;
+    font-size: 30px;
+   cursor: pointer;
+    color: black;
+}
+.btn{
+    font-size: 23px;
+    padding: 20px;
+
+}
+
+.btn:hover{
+    color: black;
+    background-color: yellow;
+    
+}
+
+
+
+/* admin dashboard */
+
+.admin {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    /* background: rgb(0, 0, 0); */
+    transition: 0.5;
+}
+
+
+.admin .heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(2, 2, 2);
+    position: absolute;
+    top: 4%;
+    right: 44%;
+    border-bottom: .2rem solid orange;
+}
+
+.admin .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin .box-container .box {
+    height: 20rem;
+    width: 30rem;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.admin .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.admin .box-container .box .info {
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.admin .box-container .box:hover .info {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.admin .box-container .box .info h3 {
+    font-size: 2rem;
+    color: rgb(255, 7, 7);
+}
+
+
+
+.btn {
+    background: rgb(242, 255, 0);
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.btn:hover {
+    /* background: transparent; */
+    border: 2px solid rgb(153, 87, 87);
+    cursor: pointer;
+}
+
+/* form  */
+.register {
+    padding: 100px;
+    min-height: 100vh;
+    text-align: center;
+    /* background: rgb(10, 8, 8); */
+    padding-bottom: 3rem;
+}
+
+.register .heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(14, 12, 12);
+    position: absolute;
+    top: 7%;
+    right: 43%;
+    border-bottom: .2rem solid orange;
+}
+
+.register form {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.register form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register select {
+    border: 2px solid rgb(92, 91, 91);
+    font-size: 23px;
+    height: 4rem;
+    width: 100%;
+    background: rgb(20, 19, 19);
+    color: white;
+    /* padding: 10px 266px 12px; */
+
+}
+
+.register select:focus {
+    background: rgb(109, 106, 106);
+
+}
+
+.register form .inputBox input {
+    height: 4rem;
+    width: 49%;
+    background: rgb(24, 22, 22);
+    color: rgb(247, 247, 247);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: none;
+}
+.register .address{
+    height: 4rem;
+    width: 100%;
+    background: rgb(20, 19, 19);
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: none;
+}
+.register form .inputBox input:focus:focus {
+    background: rgb(187, 186, 186);
+}
+.btn1 {
+    background: red;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 11px 60px;
+    border-radius: 60px;
+    transition: .4s;
+    position: relative;
+    top: 16px;
+}
+
+.btn1:hover {
+    background: transparent;
+    border: 2px solid rgb(193, 77, 77);
+    cursor: pointer;
+}
+
+
+.register form .btn:hover {
+    background:orange;
+}
+
+

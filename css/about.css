@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&family=Oswald:wght@200&family=Radio+Canada:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+/* header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(255, 248, 248);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.logo .bx{
+    font-size: 34px;
+    color: red;
+} */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about .main img{
+    height: auto;
+    width: 350px;
+    max-width: 100%;
+    border: 3px solid red;
+}
+.text{
+    width: 800px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.main{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.text h2{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: rgba(253, 250, 253, 0.479);
+
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    align-items: center;
+    position: relative;
+    left: 273px;
+    /* border-bottom: .2rem solid rgb(11, 253, 120); */
+
+}
+
+.text p{
+
+    color: rgb(10, 8, 8);
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+    font-weight: bold;
+    background-color: rgba(253, 250, 253, 0.479);
+}
+
+
+.handle {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+    
+}
+
+.handle li {
+    list-style: none;
+}
+
+.handle li i {
+   position: relative;
+   right: 12px;
+   bottom: 20px;
+   width: 60px;
+    padding: 0px;
+    font-size: 30px;
+   cursor: pointer;
+    
+}
+.btn{
+    font-size: 23px;
+    padding: 20px;
+
+}
+
+.btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: yellow;
+    
+}
+ .contact{
+    position: absolute;
+left: -158px;
+/* right: 282px; */
+bottom: 24px;
+font-size: 22px;
+font-weight: bold;
+
+}
+
